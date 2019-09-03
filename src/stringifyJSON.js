@@ -8,6 +8,8 @@ var stringifyJSON = function(obj) {
     return '"' + obj + '"';
   } else if (typeof obj === 'number' || typeof obj === 'boolean' || obj === null) {
     return "" + obj;
+  } else if (typeof obj === 'function' || obj === undefined) {
+    return undefined;
   }
 
   if (Array.isArray(obj)) {
