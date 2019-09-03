@@ -25,25 +25,25 @@ var stringifyJSON = function(obj) {
   // your code goes here
   //base cases:
   //if starts with quote...
-    //return '"' + obj + '"'
+  //return '"' + obj + '"'
   //if typeof obj is number...
-    //return "" + obj
+  //return "" + obj
   //if typeof obj is boolean...
-    //return "" + obj
+  //return "" + obj
   //if item is null...
-    //return "" + null
+  //return "" + null
 
   //if item starts with [, ends with ]...
-    //var result = [];
-    //for each ele...
-      //result.push(stringifyJSON(ele))
-    //return '[' + result + ']'
+  //var result = [];
+  //for each ele...
+  //result.push(stringifyJSON(ele))
+  //return '[' + result + ']'
 
   //if item starts with '{' ends with }...
-    //var result = [];
-    // for in ...
-      //var pair = stringifyJSON(key) + ':' + stringifyJSON(obj[key])
-      //result.push(pair)
+  //var result = [];
+  // for in ...
+  //var pair = stringifyJSON(key) + ':' + stringifyJSON(obj[key])
+  //result.push(pair)
 
 
 };
