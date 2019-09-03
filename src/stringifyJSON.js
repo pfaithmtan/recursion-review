@@ -20,7 +20,16 @@ var stringifyJSON = function(obj) {
     return '[' + result + ']';
   }
 
+  if (typeof obj === 'object') {
+    const result = [];
 
+    for (let key in obj) {
+      let pair = stringifyJSON(key) + ':' + stringifyJSON(obj[key]);
+      result.push(pair);
+    }
+
+    return '{' + result + '}';
+  }
 
   // your code goes here
   //base cases:
