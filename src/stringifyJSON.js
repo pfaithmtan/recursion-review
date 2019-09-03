@@ -10,6 +10,18 @@ var stringifyJSON = function(obj) {
     return "" + obj;
   }
 
+  if (Array.isArray(obj)) {
+    const result = [];
+
+    obj.forEach(function(el) {
+      result.push(stringifyJSON(el));
+    });
+
+    return '[' + result + ']';
+  }
+
+
+
   // your code goes here
   //base cases:
   //if starts with quote...
