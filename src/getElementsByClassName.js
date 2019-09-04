@@ -26,7 +26,7 @@ var getElementsByClassName = function(className, node) {
     const childNodeArr = node.childNodes;
 
     childNodeArr.forEach(function(ele) {
-      getElementsByClassName(className, ele);
+      result = result.concat(getElementsByClassName(className, ele));
     });
   }
 
